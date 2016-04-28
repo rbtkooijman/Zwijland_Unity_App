@@ -6,8 +6,12 @@ using Vuforia;
 
 public class TrackableList : MonoBehaviour {
  
+    // Create variable for world value
+    public float worldValue;
+
     // Update is called once per frame
     void Update () {
+
         // Get the StateManager
         StateManager sm = TrackerManager.Instance.GetStateManager ();
  
@@ -20,7 +24,8 @@ public class TrackableList : MonoBehaviour {
         Debug.Log ("List of trackables currently active (tracked): ");
         int numFrameMarkers = 0;
 
-        decimal worldValue = 10;
+		// Create variable to store increasing world value in
+		float valueCount = 10f;
 
         foreach (TrackableBehaviour tb in activeTrackables) {
             Debug.Log("Trackable: " + tb.TrackableName);
@@ -29,10 +34,16 @@ public class TrackableList : MonoBehaviour {
                 numFrameMarkers++;
 
                 // Increase world value with every frame marker detected
-                worldValue+=7.5;
+                valueCount += 7.5f;
         }
  
+        // Place world value count in the public 'worldValue' to be used publicly in the interface
+       	if (worldValue < valueCount) {
+       		worldValue += 7.5f;
+       	}
+
         Debug.Log ("Found " + numFrameMarkers + " frame markers in current frame.");
-        Debug.Log ("World value: " + worldValue + "%.");
+        Debug.Log ("Value count: " + valueCount);
+        Debug.Log ("World value: " + worldValue + "%");    
     }
 }
