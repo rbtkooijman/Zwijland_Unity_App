@@ -985,8 +985,9 @@ GameObject:
   m_Component:
   - 224: {fileID: 1137477687}
   - 114: {fileID: 1137477688}
+  - 114: {fileID: 1137477689}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: WorldSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1051,15 +1052,26 @@ MonoBehaviour:
   m_FillRect: {fileID: 2139670779}
   m_HandleRect: {fileID: 911969609}
   m_Direction: 0
-  m_MinValue: 10
+  m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 25
+  m_Value: 10
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1137477689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1137477686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44339096e804fd34692a34c03554545c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1177451886
 GameObject:
   m_ObjectHideFlags: 0
