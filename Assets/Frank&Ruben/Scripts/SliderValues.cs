@@ -20,7 +20,7 @@ public class SliderValues : MonoBehaviour
 		// GameObject.Find("HistorySlider").GetComponent<Slider>().value = GameObject.Find("ARCamera").GetComponent<TrackableList>().histValue;
     
 		// Natuur
-		// GameObject.Find("NatureSlider").GetComponent<Slider>().value = GameObject.Find("ARCamera").GetComponent<TrackableList>().natureValue;
+		// GameObject.Find("NatSlider").GetComponent<Slider>().value = GameObject.Find("ARCamera").GetComponent<TrackableList>().natValue;
 
 		// Techniek
 		// GameObject.Find("TechSlider").GetComponent<Slider>().value = GameObject.Find("ARCamera").GetComponent<TrackableList>().techValue;
