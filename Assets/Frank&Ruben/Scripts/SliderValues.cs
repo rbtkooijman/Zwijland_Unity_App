@@ -10,7 +10,7 @@ public class SliderValues : MonoBehaviour
 
         // Round the values down to a whole number and palce them in variables to be used in the user interface
 
-        // // World value
+        // World value
         float worldRounded = Mathf.Floor(GameObject.Find("ARCamera").GetComponent<TrackableList>().worldValue);
 
         // // Geography value
@@ -27,12 +27,11 @@ public class SliderValues : MonoBehaviour
 
     	// Update values of the UI slider elements with the value of the amount of detected frame markers in 'TrackableList.cs'
         
-    	// VALUE: WORLD
         // Place the world value in the world slider object
         GameObject.Find("WorldSlider").GetComponent<Slider>().value = GameObject.Find("ARCamera").GetComponent<TrackableList>().worldValue;
 
-        // Place the rounded world value in the world percentage text label
-        GameObject.Find("WorldPercentageLabel").GetComponent<Text>().text = worldRounded + "%";
+            // Place the rounded world value in the world percentage text label
+            GameObject.Find("WorldPercentLabel").GetComponent<Text>().text = worldRounded + "%";
    	
         // VALUE: GEOGRAPHY
 		GameObject.Find("GeoSlider").GetComponent<Slider>().value = GameObject.Find("ARCamera").GetComponent<TrackableList>().geoValue;
