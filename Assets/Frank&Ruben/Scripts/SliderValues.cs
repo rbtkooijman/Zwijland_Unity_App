@@ -13,17 +13,17 @@ public class SliderValues : MonoBehaviour
         // World value
         float worldRounded = Mathf.Floor(GameObject.Find("ARCamera").GetComponent<TrackableList>().worldValue);
 
-        // // Geography value
-        // float geoRounded = Mathf.Floor(GameObject.Find("ARCamera").GetComponent<TrackableList>().geoValue);
+        // Geography value
+        float geoRounded = Mathf.Floor(GameObject.Find("ARCamera").GetComponent<TrackableList>().geoValue);
 
-        // // History value
-        // float histRounded = Mathf.Floor(GameObject.Find("ARCamera").GetComponent<TrackableList>().histValue);
+        // History value
+        float histRounded = Mathf.Floor(GameObject.Find("ARCamera").GetComponent<TrackableList>().histValue);
 
-        // // Nature value
-        // float natRounded = Mathf.Floor(GameObject.Find("ARCamera").GetComponent<TrackableList>().natValue);
+        // Nature value
+        float natRounded = Mathf.Floor(GameObject.Find("ARCamera").GetComponent<TrackableList>().natValue);
 
-        // // Technology value
-        // float techRounded = Mathf.Floor(GameObject.Find("ARCamera").GetComponent<TrackableList>().techValue);
+        // Technology value
+        float techRounded = Mathf.Floor(GameObject.Find("ARCamera").GetComponent<TrackableList>().techValue);
 
     	// Update values of the UI slider elements with the value of the amount of detected frame markers in 'TrackableList.cs'
         
@@ -33,16 +33,28 @@ public class SliderValues : MonoBehaviour
             // Place the rounded world value in the world percentage text label
             GameObject.Find("WorldPercentLabel").GetComponent<Text>().text = worldRounded + "%";
    	
-        // VALUE: GEOGRAPHY
+        // Place the geography value in the respective slider object
 		GameObject.Find("GeoSlider").GetComponent<Slider>().value = GameObject.Find("ARCamera").GetComponent<TrackableList>().geoValue;
 
-    	// VALUE HISTORY
+            // Place the rounded geography value in the geography percentage text label
+            GameObject.Find("GeoPercentLabel").GetComponent<Text>().text = geoRounded + "%";        
+
+        // Place the history value in the respective slider object
 		GameObject.Find("HistSlider").GetComponent<Slider>().value = GameObject.Find("ARCamera").GetComponent<TrackableList>().histValue;
+
+            // Place the rounded history value in the history percentage text label
+            GameObject.Find("HistPercentLabel").GetComponent<Text>().text = histRounded + "%";          
     
-		// VALUE: NATURE
+        // Place the nature value in the respective slider object
 		GameObject.Find("NatSlider").GetComponent<Slider>().value = GameObject.Find("ARCamera").GetComponent<TrackableList>().natValue;
 
-		// VALUE: TECHNOLOGY
+            // Place the rounded nature value in the nature percentage text label
+            GameObject.Find("NatPercentLabel").GetComponent<Text>().text = natRounded + "%";  
+
+        // Place the technology value in the respective slider object
 		GameObject.Find("TechSlider").GetComponent<Slider>().value = GameObject.Find("ARCamera").GetComponent<TrackableList>().techValue;
+
+            // Place the rounded technology value in the technology percentage text label
+            GameObject.Find("TechPercentLabel").GetComponent<Text>().text = techRounded + "%";  
     }
 }

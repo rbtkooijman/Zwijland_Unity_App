@@ -26,147 +26,168 @@ public class TrackableList : MonoBehaviour {
         int numFrameMarkers = 0;
 
 		// Create variable for the total amount of markers used in the application
-		float markerAmount = 12f;
+		float markerAmount = 12;
 
 		// Create a variable for the amount of markers per category (in this case: 12 / 4)
 		float markerAmountCategory = markerAmount / 4;
 
-		// Create a variable for value per markers (in this case: 100% / 12)
+		// Create a variable for value per marker (in this case: 100% / 12)
 		float markerValue = 100 / markerAmount;
 
-		// Create a variable for value per markers (in this case: 100% /4)
+		// Create a variable for value per marker (in this case: 100% / 4)
 		float markerValueCategory = 100 / markerAmountCategory;	
 
+		// Run this for every marker tracked
         foreach (TrackableBehaviour tb in activeTrackables) {
             Debug.Log("Trackable: " + tb.TrackableName);
  
+ 			// Increase count for every frame marker tracked
             if (tb is MarkerBehaviour) {
                 numFrameMarkers++;
             }
 
-		    // Check individual markers and increase values if detected
-		    if (tb.TrackableName.Equals("FrameMarker0")) {
+            // Create variable with marker name to use in switch statement
+            string markerName = tb.TrackableName;
 
-		    	if (marker0Tracked == false) {
-		    		geoValue += markerValueCategory;
-		    		worldValue += markerValue;
+		    // Check if individual markers are tracked and increase world/individual values when detected
+            switch (markerName) {
+            	
+            	// If "FrameMarker0" has been detected
+            	case "FrameMarker0":
 
-		    		marker0Tracked = true;
-		    	}
-		    }
+			    	if (marker0Tracked == false) { // Check if marker 0 has been detected before
+			    		geoValue += markerValueCategory; // Increase the geography category value with amount equal to value per marker
+			    		worldValue += markerValue; // Increase the world value with the amount equal to value per marker
 
-		    else if (tb.TrackableName.Equals("FrameMarker1")) {
+			    		marker0Tracked = true; // Marker 0 has been detected (no value increase on future detections)
+			    	}
+			    	
+			    	break;
 
-		    	if (marker1Tracked == false) {
-		    		geoValue += markerValueCategory;
-		    		worldValue += markerValue;
+			    case "FrameMarker1":
 
-		    		marker1Tracked = true;
-		    	}
-		    }
-		    
-		    else if (tb.TrackableName.Equals("FrameMarker2")) {
+			    	if (marker1Tracked == false) {
+			    		geoValue += markerValueCategory;
+			    		worldValue += markerValue;
 
-		    	if (marker2Tracked == false) {
-		    		geoValue += markerValueCategory;
-		    		worldValue += markerValue;
+			    		marker1Tracked = true;
+			    	}
+			    	
+			    	break;
 
-		    		marker2Tracked = true;
-		    	}
-		    }
+			    case "FrameMarker2":
 
-		    else if (tb.TrackableName.Equals("FrameMarker3")) {
+			    	if (marker2Tracked == false) {
+			    		geoValue += markerValueCategory;
+			    		worldValue += markerValue;
 
-		    	if (marker3Tracked == false) {
-		    		histValue += markerValueCategory;
-		    		worldValue += markerValue;
+			    		marker2Tracked = true;
+			    	}
+			    	
+			    	break;
 
-		    		marker3Tracked = true;
-		    	}
-		    }
+			    case "FrameMarker3":
 
-		    else if (tb.TrackableName.Equals("FrameMarker4")) {
+			    	if (marker3Tracked == false) {
+			    		histValue += markerValueCategory;
+			    		worldValue += markerValue;
 
-		    	if (marker4Tracked == false) {
-		    		histValue += markerValueCategory;
-		    		worldValue += markerValue;
+			    		marker3Tracked = true;
+			    	}
+			    	
+			    	break;
 
-		    		marker4Tracked = true;
-		    	}
-		    }
+			    case "FrameMarker4":
 
-		    else if (tb.TrackableName.Equals("FrameMarker5")) {
+			    	if (marker4Tracked == false) {
+			    		histValue += markerValueCategory;
+			    		worldValue += markerValue;
 
-		    	if (marker5Tracked == false) {
-		    		histValue += markerValueCategory;
-		    		worldValue += markerValue;
+			    		marker4Tracked = true;
+			    	}
+			    	
+			    	break;
 
-		    		marker5Tracked = true;
-		    	}
-		    }
+			    case "FrameMarker5":
 
-		    else if (tb.TrackableName.Equals("FrameMarker6")) {
+			    	if (marker5Tracked == false) {
+			    		histValue += markerValueCategory;
+			    		worldValue += markerValue;
 
-		    	if (marker6Tracked == false) {
-		    		natValue += markerValueCategory;
-		    		worldValue += markerValue;
+			    		marker5Tracked = true;
+			    	}
+			    	
+			    	break;
 
-		    		marker6Tracked = true;
-		    	}
-		    }
+			    case "FrameMarker6":
 
-		    else if (tb.TrackableName.Equals("FrameMarker7")) {
+			    	if (marker6Tracked == false) {
+			    		natValue += markerValueCategory;
+			    		worldValue += markerValue;
 
-		    	if (marker7Tracked == false) {
-		    		natValue += markerValueCategory;
-		    		worldValue += markerValue;
+			    		marker6Tracked = true;
+			    	}
 
-		    		marker7Tracked = true;
-		    	}
-		    }
+			    	break;
 
-		    else if (tb.TrackableName.Equals("FrameMarker8")) {
+			    case "FrameMarker7":
 
-		    	if (marker8Tracked == false) {
-		    		natValue += markerValueCategory;
-		    		worldValue += markerValue;
+			    	if (marker7Tracked == false) {
+			    		natValue += markerValueCategory;
+			    		worldValue += markerValue;
 
-		    		marker8Tracked = true;
-		    	}
-		    }
+			    		marker7Tracked = true;
+			    	}
 
-		    else if (tb.TrackableName.Equals("FrameMarker9")) {
+			    	break;
 
-		    	if (marker9Tracked == false) {
-		    		techValue += markerValueCategory;
-		    		worldValue += markerValue;
+			    case "FrameMarker8":
 
-		    		marker9Tracked = true;
-		    	}
-		    }
+			    	if (marker8Tracked == false) {
+			    		natValue += markerValueCategory;
+			    		worldValue += markerValue;
 
-		    else if (tb.TrackableName.Equals("FrameMarker10")) {
+			    		marker8Tracked = true;
+			    	}
 
-		    	if (marker10Tracked == false) {
-		    		techValue += markerValueCategory;
-		    		worldValue += markerValue;
+			    	break;
 
-		    		marker10Tracked = true;
-		    	}
-		    }
+			    case "FrameMarker9":
 
-		    else if (tb.TrackableName.Equals("FrameMarker11")) {
+			    	if (marker9Tracked == false) {
+			    		techValue += markerValueCategory;
+			    		worldValue += markerValue;
 
-		    	if (marker11Tracked == false) {
-		    		techValue += markerValueCategory;
-		    		worldValue += markerValue;
+			    		marker9Tracked = true;
+			    	}
 
-		    		marker11Tracked = true;
-		    	}
-		    }		    		    		    		        		    		    	       
+			    	break;
+			    
+			    case "FrameMarker10":
+
+			    	if (marker10Tracked == false) {
+			    		techValue += markerValueCategory;
+			    		worldValue += markerValue;
+
+			    		marker10Tracked = true;
+			    	}
+
+			    	break;
+
+			    case "FrameMarker11":
+
+			    	if (marker11Tracked == false) {
+			    		techValue += markerValueCategory;
+			    		worldValue += markerValue;
+
+			    		marker11Tracked = true;
+			    	}
+
+			    	break;			    	
+            }	    		    		    		        		    		    	       
 		}
 
-       	// Display the number of detected markers, the value count and the translated world value in the console
+       	// Display the number of detected markers and the world/category values in the console
         Debug.Log ("Found " + numFrameMarkers + " frame markers in current frame.");
         Debug.Log ("World value: " + worldValue + "%");
         Debug.Log ("Geography value: " + geoValue + "%");
