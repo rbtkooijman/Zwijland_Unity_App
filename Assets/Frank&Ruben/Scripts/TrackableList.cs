@@ -6,6 +6,18 @@ using Vuforia;
 
 public class TrackableList : MonoBehaviour {
 
+	// Create variable for the total amount of markers used in the application
+	public static float markerAmount = 12;
+
+	// Create a variable for the amount of markers per category (in this case: 12 / 4)
+	public static float markerAmountCategory = markerAmount / 4;
+
+	// Create a variable for value per marker (in this case: 100% / 12)
+	public float markerValue = 100 / markerAmount;
+
+	// Create a variable for value per marker (in this case: 100% / 4)
+	public float markerValueCategory = 100 / markerAmountCategory;
+
     // Create public variables to store world and theme values in
     public float worldValue, geoValue, histValue, natValue, techValue;
 
@@ -24,18 +36,6 @@ public class TrackableList : MonoBehaviour {
         // Iterate through the list of active trackables and display in console
         Debug.Log ("List of trackables currently active (tracked): ");
         int numFrameMarkers = 0;
-
-		// Create variable for the total amount of markers used in the application
-		float markerAmount = 12;
-
-		// Create a variable for the amount of markers per category (in this case: 12 / 4)
-		float markerAmountCategory = markerAmount / 4;
-
-		// Create a variable for value per marker (in this case: 100% / 12)
-		float markerValue = 100 / markerAmount;
-
-		// Create a variable for value per marker (in this case: 100% / 4)
-		float markerValueCategory = 100 / markerAmountCategory;	
 
 		// Run this for every marker tracked
         foreach (TrackableBehaviour tb in activeTrackables) {
