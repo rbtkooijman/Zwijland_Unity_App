@@ -52,7 +52,7 @@ public class SliderValues : MonoBehaviour
             GameObject.Find("NatPercentLabel").GetComponent<Text>().text = natRounded + "%";  
 
         // Place the technology value in the respective slider object, which moves towards the new value in steps of 1f
-		GameObject.Find("TechSlider").GetComponent<Slider>().value = Mathf.MoveTowards (GameObject.Find("TechSlider").GetComponent<Slider>().value, GameObject.Find("ARCamera").GetComponent<TrackableList>().techValue, 3f);;
+		GameObject.Find("TechSlider").GetComponent<Slider>().value = Mathf.MoveTowards (GameObject.Find("TechSlider").GetComponent<Slider>().value, GameObject.Find("ARCamera").GetComponent<TrackableList>().techValue, 3f);
 
             // Place the rounded technology value in the technology percentage text label
             GameObject.Find("TechPercentLabel").GetComponent<Text>().text = techRounded + "%";  
