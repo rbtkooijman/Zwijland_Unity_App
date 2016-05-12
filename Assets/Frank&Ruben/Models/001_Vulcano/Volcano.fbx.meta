@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: 5a42dee5a333c374895d668691f6e24d
+timeCreated: 1462365408
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cloud
+    100002: Cube
+    100004: Lava
+    100006: Lava_001
+    100008: Tree_000
+    100010: Tree_001
+    100012: Tree_002
+    100014: Tree_003
+    100016: Tree_004
+    100018: Tree_005
+    100020: Tree_006
+    100022: Volcano
+    100024: //RootNode
+    400000: Cloud
+    400002: Cube
+    400004: Lava
+    400006: Lava_001
+    400008: Tree_000
+    400010: Tree_001
+    400012: Tree_002
+    400014: Tree_003
+    400016: Tree_004
+    400018: Tree_005
+    400020: Tree_006
+    400022: Volcano
+    400024: //RootNode
+    2300000: Cloud
+    2300002: Cube
+    2300004: Lava
+    2300006: Lava_001
+    2300008: Tree_000
+    2300010: Tree_001
+    2300012: Tree_002
+    2300014: Tree_003
+    2300016: Tree_004
+    2300018: Tree_005
+    2300020: Tree_006
+    2300022: Volcano
+    3300000: Cloud
+    3300002: Cube
+    3300004: Lava
+    3300006: Lava_001
+    3300008: Tree_000
+    3300010: Tree_001
+    3300012: Tree_002
+    3300014: Tree_003
+    3300016: Tree_004
+    3300018: Tree_005
+    3300020: Tree_006
+    3300022: Volcano
+    4300000: Cube
+    4300002: Tree_006
+    4300004: Tree_005
+    4300006: Tree_003
+    4300008: Tree_002
+    4300010: Tree_001
+    4300012: Tree_000
+    4300014: Lava
+    4300016: Cloud
+    4300018: Volcano
+    4300020: Lava_001
+    4300022: Tree_004
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
