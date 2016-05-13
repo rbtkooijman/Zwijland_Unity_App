@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: 5d9c975faa6548744a2fad40079b89cc
+timeCreated: 1462871399
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Campfire
+    100002: Cube_002
+    100004: Floor
+    100006: //RootNode
+    100008: Hut1
+    100010: Hut1_001
+    100012: Hut3
+    100014: Rock_000
+    100016: Rock_001
+    100018: Rock_002
+    100020: Tree_000
+    100022: Tree_001
+    100024: Tree_002
+    100026: Tree_003
+    100028: Tree_004
+    100030: Tree_005
+    100032: Tree_006
+    100034: Tree_007
+    100036: Tree_008
+    100038: Tree_009
+    100040: Tree_010
+    100042: Tree_011
+    100044: Tree_012
+    400000: Campfire
+    400002: Cube_002
+    400004: Floor
+    400006: //RootNode
+    400008: Hut1
+    400010: Hut1_001
+    400012: Hut3
+    400014: Rock_000
+    400016: Rock_001
+    400018: Rock_002
+    400020: Tree_000
+    400022: Tree_001
+    400024: Tree_002
+    400026: Tree_003
+    400028: Tree_004
+    400030: Tree_005
+    400032: Tree_006
+    400034: Tree_007
+    400036: Tree_008
+    400038: Tree_009
+    400040: Tree_010
+    400042: Tree_011
+    400044: Tree_012
+    2300000: Campfire
+    2300002: Cube_002
+    2300004: Floor
+    2300006: Hut1
+    2300008: Hut1_001
+    2300010: Hut3
+    2300012: Rock_000
+    2300014: Rock_001
+    2300016: Rock_002
+    2300018: Tree_000
+    2300020: Tree_001
+    2300022: Tree_002
+    2300024: Tree_003
+    2300026: Tree_004
+    2300028: Tree_005
+    2300030: Tree_006
+    2300032: Tree_007
+    2300034: Tree_008
+    2300036: Tree_009
+    2300038: Tree_010
+    2300040: Tree_011
+    2300042: Tree_012
+    3300000: Campfire
+    3300002: Cube_002
+    3300004: Floor
+    3300006: Hut1
+    3300008: Hut1_001
+    3300010: Hut3
+    3300012: Rock_000
+    3300014: Rock_001
+    3300016: Rock_002
+    3300018: Tree_000
+    3300020: Tree_001
+    3300022: Tree_002
+    3300024: Tree_003
+    3300026: Tree_004
+    3300028: Tree_005
+    3300030: Tree_006
+    3300032: Tree_007
+    3300034: Tree_008
+    3300036: Tree_009
+    3300038: Tree_010
+    3300040: Tree_011
+    3300042: Tree_012
+    4300000: Tree_012
+    4300002: Tree_011
+    4300004: Tree_010
+    4300006: Tree_009
+    4300008: Tree_008
+    4300010: Tree_007
+    4300012: Rock_002
+    4300014: Hut1_001
+    4300016: Rock_001
+    4300018: Tree_006
+    4300020: Tree_004
+    4300022: Tree_003
+    4300024: Tree_002
+    4300026: Tree_001
+    4300028: Tree_000
+    4300030: Campfire
+    4300032: Floor
+    4300034: Hut3
+    4300036: Hut1
+    4300038: Cube_002
+    4300040: Tree_005
+    4300042: Rock_000
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

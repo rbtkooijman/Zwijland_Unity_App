@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: 50e519540f3cfcb4691b9fc3cdbcb877
+timeCreated: 1462969682
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cube
+    100004: Cube_001
+    100006: Cube_002
+    100008: Cube_003
+    100010: Cube_004
+    100012: Cube_006
+    100014: Cube_007
+    100016: Cube_008
+    100018: Floor
+    100020: Tower
+    100022: Tower_001
+    100024: Tower_002
+    100026: Tower_003
+    100028: Tree_000
+    100030: Tree_001
+    100032: Tree_002
+    100034: Tree_003
+    100036: Tree_004
+    100038: Tree_005
+    100040: Tree_006
+    100042: Tree_007
+    100044: Tree_008
+    100046: Wall2
+    100048: Wall3
+    100050: Wall3_001
+    100052: Wall3_002
+    400000: //RootNode
+    400002: Cube
+    400004: Cube_001
+    400006: Cube_002
+    400008: Cube_003
+    400010: Cube_004
+    400012: Cube_006
+    400014: Cube_007
+    400016: Cube_008
+    400018: Floor
+    400020: Tower
+    400022: Tower_001
+    400024: Tower_002
+    400026: Tower_003
+    400028: Tree_000
+    400030: Tree_001
+    400032: Tree_002
+    400034: Tree_003
+    400036: Tree_004
+    400038: Tree_005
+    400040: Tree_006
+    400042: Tree_007
+    400044: Tree_008
+    400046: Wall2
+    400048: Wall3
+    400050: Wall3_001
+    400052: Wall3_002
+    2300000: Cube
+    2300002: Cube_001
+    2300004: Cube_002
+    2300006: Cube_003
+    2300008: Cube_004
+    2300010: Cube_006
+    2300012: Cube_007
+    2300014: Cube_008
+    2300016: Floor
+    2300018: Tower
+    2300020: Tower_001
+    2300022: Tower_002
+    2300024: Tower_003
+    2300026: Tree_000
+    2300028: Tree_001
+    2300030: Tree_002
+    2300032: Tree_003
+    2300034: Tree_004
+    2300036: Tree_005
+    2300038: Tree_006
+    2300040: Tree_007
+    2300042: Tree_008
+    2300044: Wall2
+    2300046: Wall3
+    2300048: Wall3_001
+    2300050: Wall3_002
+    3300000: Cube
+    3300002: Cube_001
+    3300004: Cube_002
+    3300006: Cube_003
+    3300008: Cube_004
+    3300010: Cube_006
+    3300012: Cube_007
+    3300014: Cube_008
+    3300016: Floor
+    3300018: Tower
+    3300020: Tower_001
+    3300022: Tower_002
+    3300024: Tower_003
+    3300026: Tree_000
+    3300028: Tree_001
+    3300030: Tree_002
+    3300032: Tree_003
+    3300034: Tree_004
+    3300036: Tree_005
+    3300038: Tree_006
+    3300040: Tree_007
+    3300042: Tree_008
+    3300044: Wall2
+    3300046: Wall3
+    3300048: Wall3_001
+    3300050: Wall3_002
+    4300000: Cube_008
+    4300002: Cube_007
+    4300004: Cube_006
+    4300006: Cube_004
+    4300008: Cube_003
+    4300010: Cube_002
+    4300012: Tree_008
+    4300014: Tree_007
+    4300016: Tree_006
+    4300018: Tree_005
+    4300020: Tree_004
+    4300022: Tree_002
+    4300024: Tree_001
+    4300026: Tree_000
+    4300028: Cube_001
+    4300030: Cube
+    4300032: Tower_003
+    4300034: Tower_002
+    4300036: Tower_001
+    4300038: Wall3_002
+    4300040: Wall3_001
+    4300042: Floor
+    4300044: Tower
+    4300046: Wall2
+    4300048: Wall3
+    4300050: Tree_003
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
