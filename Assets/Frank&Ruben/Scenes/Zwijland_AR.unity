@@ -891,6 +891,7 @@ GameObject:
   - 222: {fileID: 310398807}
   - 114: {fileID: 310398806}
   - 95: {fileID: 310398808}
+  - 114: {fileID: 310398809}
   m_Layer: 5
   m_Name: InfoPanel
   m_TagString: Untagged
@@ -960,11 +961,23 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 17aa99925f752194388a574d6481dd69, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &310398809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 310398804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 626bdca5e14112c45a2d7d6f95910a07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PanelOpened: 0
 --- !u!1 &312484248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,7 +1129,6 @@ GameObject:
   - 114: {fileID: 345333079}
   - 114: {fileID: 345333078}
   - 114: {fileID: 345333082}
-  - 114: {fileID: 345333083}
   m_Layer: 5
   m_Name: UICanvas
   m_TagString: Untagged
@@ -1212,18 +1224,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44339096e804fd34692a34c03554545c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &345333083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 345333077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 626bdca5e14112c45a2d7d6f95910a07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PanelOpened: 0
 --- !u!1 &349008091
 GameObject:
   m_ObjectHideFlags: 0
@@ -5448,7 +5448,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 345333083}
+      - m_Target: {fileID: 310398809}
         m_MethodName: ToggleInfoPanel
         m_Mode: 1
         m_Arguments:
