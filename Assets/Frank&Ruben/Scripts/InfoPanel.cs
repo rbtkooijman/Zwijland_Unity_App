@@ -6,12 +6,16 @@ public class InfoPanel : MonoBehaviour {
 	// Create boolean to remember if the info panel is open or not
 	public bool PanelOpened;
 
-	// Create reference to the animator component
-	private Animator anim;
+	// Create references to the animator components
+	private Animator animPanel;
+
+	private Animator animButton;	
 
 	void Update () {
 
-		anim = GetComponent<Animator>();
+		animPanel = GetComponent<Animator>();
+
+		animButton = GameObject.Find("InfoButton").GetComponent<Animator>();		
 	}
 
 	public void ToggleInfoPanel () {
@@ -19,7 +23,11 @@ public class InfoPanel : MonoBehaviour {
 		if (PanelOpened == false) {
 			// GameObject.Find("InfoPanel").GetComponent<RectTransform>().sizeDelta = new Vector2(990f, 1350f);	
 
-			anim.Play ("OpenInfoPanel");
+			// Play panel open animation
+			animPanel.Play ("OpenInfoPanel");
+
+			// Play button switch animation
+			animButton.Play ("OpenToCloseInfoButton");
 
 			PanelOpened = true;
 		}
@@ -27,7 +35,11 @@ public class InfoPanel : MonoBehaviour {
 		else {
 			// GameObject.Find("InfoPanel").GetComponent<RectTransform>().sizeDelta = new Vector2(0f, 0f);
 
-			anim.Play ("CloseInfoPanel");
+			// Play panel close animation
+			animPanel.Play ("CloseInfoPanel");
+
+			// Play button switch animation
+			animButton.Play ("CloseToOpenInfoButton");
 
 			PanelOpened = false;
 		}
