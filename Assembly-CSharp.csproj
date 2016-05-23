@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Frank&amp;Ruben\Scripts\BackButton.cs" />
+     <Compile Include="Assets\Frank&amp;Ruben\Scripts\CloseOnTouch.cs" />
      <Compile Include="Assets\Frank&amp;Ruben\Scripts\FocusMode.cs" />
      <Compile Include="Assets\Frank&amp;Ruben\Scripts\InfoPanel.cs" />
      <Compile Include="Assets\Frank&amp;Ruben\Scripts\PlayMarkerAudio.cs" />

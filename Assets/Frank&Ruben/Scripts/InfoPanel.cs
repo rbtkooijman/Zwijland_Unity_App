@@ -7,9 +7,9 @@ public class InfoPanel : MonoBehaviour {
 	public bool PanelOpened;
 
 	// Create references to the animator components
-	private Animator animPanel;
+	public Animator animPanel;
 
-	private Animator animButton;	
+	public Animator animButton;	
 
 	void Update () {
 
@@ -24,11 +24,12 @@ public class InfoPanel : MonoBehaviour {
 			// GameObject.Find("InfoPanel").GetComponent<RectTransform>().sizeDelta = new Vector2(990f, 1350f);	
 
 			// Play panel open animation
-			animPanel.Play ("OpenInfoPanel");
+			animPanel.Play("OpenInfoPanel");
 
 			// Play button switch animation
-			animButton.Play ("OpenToCloseInfoButton");
+			animButton.Play("OpenToCloseInfoButton");
 
+			// Set info panel state to 'opened'
 			PanelOpened = true;
 		}
 
@@ -36,11 +37,12 @@ public class InfoPanel : MonoBehaviour {
 			// GameObject.Find("InfoPanel").GetComponent<RectTransform>().sizeDelta = new Vector2(0f, 0f);
 
 			// Play panel close animation
-			animPanel.Play ("CloseInfoPanel");
+			animPanel.Play("CloseInfoPanel");
 
 			// Play button switch animation
-			animButton.Play ("CloseToOpenInfoButton");
+			animButton.Play("CloseToOpenInfoButton");
 
+			// Set info panel state to 'closed'
 			PanelOpened = false;
 		}
 
