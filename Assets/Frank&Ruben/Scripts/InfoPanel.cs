@@ -7,40 +7,48 @@ public class InfoPanel : MonoBehaviour {
 	public bool PanelOpened;
 
 	// Create references to the animator components
-	public Animator animPanel;
+	public Animator animPanel, animButton;
 
-	public Animator animButton;	
+	// Create references to the audio components
+    public AudioSource audioPanel;
 
 	void Update () {
 
+		// Store the object references to the animator components
 		animPanel = GetComponent<Animator>();
-
-		animButton = GameObject.Find("InfoButton").GetComponent<Animator>();		
+		animButton = GameObject.Find("InfoButton").GetComponent<Animator>();
+		
+		// Store the object references to the audio component
+        audioPanel = GameObject.Find("InfoButton").GetComponent<AudioSource>();		
 	}
 
 	public void ToggleInfoPanel () {
 
 		if (PanelOpened == false) {
-			// GameObject.Find("InfoPanel").GetComponent<RectTransform>().sizeDelta = new Vector2(990f, 1350f);	
-
+			
 			// Play panel open animation
 			animPanel.Play("OpenInfoPanel");
 
 			// Play button switch animation
 			animButton.Play("OpenToCloseInfoButton");
 
+            // Play panel sound effect
+            audioPanel.Play();
+
 			// Set info panel state to 'opened'
 			PanelOpened = true;
 		}
 
 		else {
-			// GameObject.Find("InfoPanel").GetComponent<RectTransform>().sizeDelta = new Vector2(0f, 0f);
-
+			
 			// Play panel close animation
 			animPanel.Play("CloseInfoPanel");
 
 			// Play button switch animation
 			animButton.Play("CloseToOpenInfoButton");
+
+            // Play panel sound effect
+            audioPanel.Play();			
 
 			// Set info panel state to 'closed'
 			PanelOpened = false;

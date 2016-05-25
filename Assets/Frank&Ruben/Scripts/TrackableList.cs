@@ -24,15 +24,6 @@ public class TrackableList : MonoBehaviour {
     // Create booleans to remember if individual markers have been tracked already
     public bool marker0Tracked, marker1Tracked, marker2Tracked, marker3Tracked, marker4Tracked, marker5Tracked, marker6Tracked, marker7Tracked, marker8Tracked, marker9Tracked, marker10Tracked, marker11Tracked; 
 
-	// Create boolean to remember if the Geography compete banner is shown or not
-	public bool GeoCompleteVisible;
-
-	// Create references to the animator components of the 'completed' banners
-	public Animator animGeoBanner;
-	public Animator animHistBanner;
-	public Animator animNatBanner;
-	public Animator animTechBanner;			
-
     // Update is called once per frame
     void Update () {
 
@@ -43,18 +34,12 @@ public class TrackableList : MonoBehaviour {
         IEnumerable<TrackableBehaviour> activeTrackables = sm.GetActiveTrackableBehaviours ();
  
         // Iterate through the list of active trackables and display in console
-        Debug.Log ("List of trackables currently active (tracked): ");
+        // Debug.Log ("List of trackables currently active (tracked): ");
         int numFrameMarkers = 0;
-
-		// Store the object references to the animator components of the 'completed' banners
-        animGeoBanner = GameObject.Find("GeoComplete").GetComponent<Animator>();
-        animHistBanner = GameObject.Find("GeoComplete").GetComponent<Animator>();
-        animNatBanner = GameObject.Find("GeoComplete").GetComponent<Animator>();
-        animTechBanner = GameObject.Find("GeoComplete").GetComponent<Animator>();        
 
 		// Run this for every marker tracked
         foreach (TrackableBehaviour tb in activeTrackables) {
-            Debug.Log("Trackable: " + tb.TrackableName);
+            // Debug.Log("Trackable: " + tb.TrackableName);
  
  			// Increase count for every frame marker tracked
             if (tb is MarkerBehaviour) {
@@ -200,52 +185,14 @@ public class TrackableList : MonoBehaviour {
 
 			    	break;			    	
             }
-
-            // Check if all markers of the Geography category are tracked and show the completed banner if so
-            if (marker0Tracked && marker1Tracked && marker2Tracked == true) {
-
-            	// if (GameObject.Find("GeoSlider").GetComponent<Slider>().value == 100) {
-            			
-            	// }
-				
-				// Play panel open animation
-				animGeoBanner.Play("ShowCompleteBanner");
-
-				// Set Geography complete banner state to 'visible'				
-				GeoCompleteVisible = true;
-
-            	// Debug.Log ("Geography complete!");
-            }
-
-            // Check if all markers of the Geography category are tracked and show the completed banner if so
-            if (marker3Tracked && marker4Tracked && marker5Tracked == true) {
-            	
-
-            	// Debug.Log ("History complete!");
-            }
-
-            // Check if all markers of the Geography category are tracked and show the completed banner if so
-            if (marker6Tracked && marker7Tracked && marker8Tracked == true) {
-            	
-
-            	// Debug.Log ("Nature complete!");
-            }
-
-            // Check if all markers of the Geography category are tracked and show the completed banner if so
-            if (marker9Tracked && marker10Tracked && marker11Tracked == true) {
-            	
-
-            	// Debug.Log ("Technology complete!");
-            }            
-
 		}
 
        	// Display the number of detected markers and the world/category values in the console
-        Debug.Log ("Found " + numFrameMarkers + " frame markers in current frame.");
-        Debug.Log ("World value: " + worldValue + "%");
-        Debug.Log ("Geography value: " + geoValue + "%");
-        Debug.Log ("History value: " + histValue + "%");
-        Debug.Log ("Nature value: " + natValue + "%");
-        Debug.Log ("Technology value: " + techValue + "%");
+        // Debug.Log ("Found " + numFrameMarkers + " frame markers in current frame.");
+        // Debug.Log ("World value: " + worldValue + "%");
+        // Debug.Log ("Geography value: " + geoValue + "%");
+        // Debug.Log ("History value: " + histValue + "%");
+        // Debug.Log ("Nature value: " + natValue + "%");
+        // Debug.Log ("Technology value: " + techValue + "%");
     }
 }
