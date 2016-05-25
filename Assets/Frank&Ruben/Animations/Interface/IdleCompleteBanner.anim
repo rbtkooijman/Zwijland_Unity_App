@@ -77,22 +77,22 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 534
+        value: 684
         inSlope: 0
         outSlope: -0
         tangentMode: 21
       - time: 0.8333333
-        value: 534
+        value: 684
         inSlope: 0
         outSlope: -0
         tangentMode: 21
       - time: 1.6666666
-        value: 534
+        value: 684
         inSlope: 0
         outSlope: -0
         tangentMode: 21
       - time: 2
-        value: 534
+        value: 684
         inSlope: 0
         outSlope: 0
         tangentMode: 21
@@ -185,22 +185,22 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 534
+        value: 684
         inSlope: 0
         outSlope: -0
         tangentMode: 21
       - time: 0.8333333
-        value: 534
+        value: 684
         inSlope: 0
         outSlope: -0
         tangentMode: 21
       - time: 1.6666666
-        value: 534
+        value: 684
         inSlope: 0
         outSlope: -0
         tangentMode: 21
       - time: 2
-        value: 534
+        value: 684
         inSlope: 0
         outSlope: 0
         tangentMode: 21
