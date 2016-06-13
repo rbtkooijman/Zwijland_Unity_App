@@ -9631,7 +9631,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "In totaal zijn er 12 kaartjes te verdienen. Leg een verdiend kaartje (met
     het grote plaatje naar boven!) in het goede vak. Kijk goed naar de kleur en het
-    icoontje op het kaartje om te zien bij welk thema hij hoort.\r\n"
+    icoontje op het kaartje om te zien bij welk thema het hoort.\r\n"
 --- !u!222 &722990318
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28369,7 +28369,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Richt de tablet op het kaartje en kijk wat er gebeurd! \r\n\r\nOnderaan
     het scherm zie je vijf balkjes. De gekleurde balkjes laten zien hoe ver jullie
-    zijn met elk thema. Wanneer de grote grijze balk vol is hebben jullie alle kaartjes
+    zijn met elk thema. Wanneer de grote grijze balk vol is, hebben jullie alle kaartjes
     verdiend en is jullie Zwijland compleet!\r\n\r\nVeel succes!\r"
 --- !u!222 &2143022517
 CanvasRenderer:
