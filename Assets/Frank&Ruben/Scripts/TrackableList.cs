@@ -184,15 +184,6 @@ public class TrackableList : MonoBehaviour {
 			    	}
 
 			    	break;
-
-			    // case "ImageTarget_Card":
-
-			    // 	Debug.Log ("Reward card found!");
-
-			    // 	GameObject.Find("UICanvas").GetComponent<CanvasGroup>().alpha = 0;
-			    // 	GameObject.Find("UICanvas").GetComponent<CanvasGroup>().interactable = false;
-
-			    // 	break;
 			}
 		}
 

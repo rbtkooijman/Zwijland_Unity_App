@@ -48,13 +48,16 @@ public class PlayMarkerAudio : MonoBehaviour, ITrackableEventHandler {
             // Check if the detected marker is ImageTarget_Card (Reward)
             if (mTrackableBehaviour.TrackableName == "ImageTarget_Card") {
 
-                Debug.Log ("Reward card found!");
+                // Debug.Log ("Reward card found!");
 
                 // Hide the interface canvas when ImageTarget_Card is found
                 GameObject.Find("UICanvas").GetComponent<CanvasGroup>().alpha = 0;
 
                 // Disable interface input while the interface is hidden
-                GameObject.Find("UICanvas").GetComponent<CanvasGroup>().interactable = false;             
+                GameObject.Find("UICanvas").GetComponent<CanvasGroup>().interactable = false;
+
+                // Show the reward interface canvas when ImageTarget_Card is found
+                GameObject.Find("UICanvas_Reward").GetComponent<CanvasGroup>().alpha = 1;                   
             }            
         }
         else
@@ -72,13 +75,16 @@ public class PlayMarkerAudio : MonoBehaviour, ITrackableEventHandler {
             // // Check if the detected marker is ImageTarget_Card (Reward)
             if (mTrackableBehaviour.TrackableName == "ImageTarget_Card") {
 
-                Debug.Log ("Reward card lost!");
+                // Debug.Log ("Reward card lost!");
 
                 // Show the interface canvas when ImageTarget_Card is found
                 GameObject.Find("UICanvas").GetComponent<CanvasGroup>().alpha = 1;
 
                 // Re-enable interface input while the interface is visible
                 GameObject.Find("UICanvas").GetComponent<CanvasGroup>().interactable = true;
+
+                // Hide the reward interface canvas when ImageTarget_Card is found
+                GameObject.Find("UICanvas_Reward").GetComponent<CanvasGroup>().alpha = 0;                
             }              
         }
     }
