@@ -183,8 +183,17 @@ public class TrackableList : MonoBehaviour {
 			    		marker11Tracked = true;
 			    	}
 
-			    	break;			    	
-            }
+			    	break;
+
+			    // case "ImageTarget_Card":
+
+			    // 	Debug.Log ("Reward card found!");
+
+			    // 	GameObject.Find("UICanvas").GetComponent<CanvasGroup>().alpha = 0;
+			    // 	GameObject.Find("UICanvas").GetComponent<CanvasGroup>().interactable = false;
+
+			    // 	break;
+			}
 		}
 
        	// Display the number of detected markers and the world/category values in the console
