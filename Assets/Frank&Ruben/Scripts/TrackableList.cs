@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+// Code by Ruben Kooijman
+// http://rubenkooijman.nl
+
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -183,7 +186,7 @@ public class TrackableList : MonoBehaviour {
 			    		marker11Tracked = true;
 			    	}
 
-			    	break;
+			    	break;	    	
 			}
 		}
 

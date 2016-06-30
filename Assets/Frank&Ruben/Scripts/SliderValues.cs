@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿// Code by Ruben Kooijman
+// http://rubenkooijman.nl
+
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 

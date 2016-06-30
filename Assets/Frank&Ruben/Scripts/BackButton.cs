@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿// Code by Ruben Kooijman
+// http://rubenkooijman.nl
+
+using UnityEngine;
 using System.Collections;
 
 // Enable the 'back' button on the device to exit the app 
